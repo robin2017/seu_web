@@ -26,24 +26,19 @@ function insertElement(){
 	 
 	if(!document.getElementById("gallery")) return false;
 	//创建photo元素
-	var photoholder=document.createElement("photo");
+	var photoholder=document.createElement("img"); /*这里必须img啊，这是关键字*/
 	photoholder.setAttribute("id","photoholder");
 	photoholder.setAttribute("src","images/photos/basic.jpg");
 	photoholder.setAttribute("alt","show photo");
-	//创建desc元素
-	var desc=document.createElement("p");
-	desc.setAttribute("id","desc");
-	//创建text元素
-	var text=document.createTextNode("choose a photo");
-	//连接
+	photoholder.setAttribute("height","400px");
+	photoholder.setAttribute("width","400px");
 
-	desc.appendChild(text);
 
-	var gallery=document.getElementById("gallery");
+	var gallery=document.getElementById("pic_photo");
 
-	insertAfter(desc,gallery);
 
-	insertAfter(photoholder,desc);
+	gallery.appendChild(photoholder);
+//	appendChild(photoholder,gallery);
 
 
 
@@ -55,8 +50,11 @@ function insertElement(){
 	//连接
 
 	ddd.appendChild(ttt);
-	
-	insertAfter(ddd,photoholder);
+
+	var pic_text=document.getElementById("pic_text");
+	pic_text.appendChild(ddd)
+
+	//insertAfter(ddd,photoholder);
 }
 //加载时运行
 function linkPhoto(){

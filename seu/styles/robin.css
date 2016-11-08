@@ -1,13 +1,59 @@
 *{margin:0;padding:0;word-bread:break-all;}
 body{  background: #FFF;color:#333;font:12px/1.5em Helvetica,Arial,sans-serif;}
-h1,h2,h3,h4,h5,h2{font-size:1em;}
-a{color: #3b45b1;text-decoration: none; }
-.show{width:1000px;margin:20px auto}
-/*  part1  */
-.header{width:736px;height:104px;background:#F00;}
+a{color: #ffffff;text-decoration: none; }
 
+
+h1{font-size: 35px;
+    height: 60px;
+    line-height: 60px;font-family:serif;margin-left:10px;}
+.show{width:1002px;margin:20px auto}
+/*  part1  */
+.header{height:104px;
+    background: rgba(16, 13, 13, 0.09);}
 /*  part2  */
-.navigation
+.navigation{background:#a4a4ad;}
+.navigation ul{height:30px; line-height: 30px;} /*将line-height设为height一样大*/
+.navigation li{height:40px;display:inline; margin:10px 60px 10px 60px;}   /*inline只能放在li中*/
+.navigation li a{font-size:25px; }
+
+
 
 /*  part3  */
-.content
+.content {background: rgba(41, 182, 90, 0.16);}
+.content .p_text_indent_2{text-indent:2em;font-size:30px;line-height:1.2em;margin: 0px 15px 0px 15px;}
+
+.content #gallery {
+    margin-left:50px;margin-right:50px;}
+.content #gallery li{height:40px;display:inline;    margin: 5px 25px 5px 5px;}
+
+
+
+#pic_photo #photoholder{padding-top:30px;display: block;   /*居中  display:block;margin:auto*/
+    margin:auto;
+}
+#pic_text{height:30px;font-size:25px;
+    text-align: center;
+   }
+
+.table_department a{color: #363cff;}
+.table_department{
+    border:0;
+    cellspacing:2;
+    bordercolor:#000000;
+    cellpadding:3;
+    width:100%;
+    align:center;
+}
+.td_department{
+    font-size: 26px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    margin-left: 20px;
+    font-size: 20px;
+}
+fieldset input{height:20px;font-size:20px;}
+fieldset textarea{font-size:20px;}

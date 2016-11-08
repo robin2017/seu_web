@@ -2,9 +2,9 @@
 body{  background: #FFF;color:#333;font:12px/1.5em Helvetica,Arial,sans-serif;}
 h1,h2,h3,h4,h5,h2{font-size:1em;}
 a{color: #3b45b1;text-decoration: none; }
-
+.show{width:1000px;margin:20px auto}
 /*  part1  */
-.header{}
+.header{width:736px;height:104px;background:#F00;}
 
 /*  part2  */
 .navigation
